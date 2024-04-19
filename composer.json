@@ -1,0 +1,20 @@
+{
+    "name": "osmansufy/custom-database-crud",
+    "description": "A plugin to demonstrate CRUD operations on a custom database table.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "osmansufy",
+            "email": "osmansufy20@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CustomDatabaseCrud\\": "includes/"
+        },
+        "files": []
+    }
+}
