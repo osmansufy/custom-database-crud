@@ -15,6 +15,6 @@
         "psr-4": {
             "CustomDatabaseCrud\\": "includes/"
         },
-        "files": []
+        "files": ["includes/functions.php"]
     }
 }

@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
     $('.cdc-delete-button').on('click', function() {
-        var recordId = $(this).data('record-id');
+        const recordId = $(this).data('record-id');
+        $deleteButton = $(this);
         if (confirm('Are you sure you want to delete this record?')) {
             $.ajax({
                 url: cdc_ajax_object.ajax_url,
@@ -15,7 +16,7 @@ jQuery(document).ready(function($) {
                     // Handle success
                     if (response.success) {
                     //  remove the row from the table
-                        $('#cdc-table-row-' + response.data.deleted_id).remove();
+                        $deleteButton.closest('tr').remove();
 
                         // Show a success message
                         $('.cdc-db-item-list').prepend('<div class="notice notice-success is-dismissible"><p>Record deleted successfully.</p></div>');
