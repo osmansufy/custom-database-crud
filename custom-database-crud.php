@@ -27,6 +27,9 @@ final class Custom_Database_CRUD
     {
         $this->define_constants();
         register_activation_hook(__FILE__, [$this, 'activate']);
+
+        // deActivate hook
+        register_deactivation_hook(__FILE__, [CustomDatabaseCrud\DeActivator::class, 'deactivate']);
         add_action('plugins_loaded', [$this, 'initialize_plugin']);
 
         // admin enqueue scripts

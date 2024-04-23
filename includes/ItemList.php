@@ -42,6 +42,7 @@ class ItemList extends \WP_List_Table
             'email'   => __('Email', 'custom-database-crud'),
             'phone'   => __('Phone', 'custom-database-crud'),
             'address' => __('Address', 'custom-database-crud'),
+            'id'      => __('ID', 'custom-database-crud'),
             'created_at' => __('Date', 'custom-database-crud'),
         ];
 
